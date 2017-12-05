@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blackjack</title>
+        <script src="jquery.js"></script>
+        <script src="dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <!--rashmi, annie, christine, olivia -->
+   <div id="header"><h2>Welcome to Blackjack!</h2></div>
+           
+             <div class="betting">
+            <div class="betcontainer">
+                <p>Bet </p>
+                <p id="pbet">$0</p>
+            </div>
+
+                 <div class="chips">
+                <div id="five">
+                    <img src="chip/5-chip.png" alt="Chip 5">
+                </div>
+                <div id="ten">
+                    <img src="chip/10-chip.png" alt="Chip 10">
+                </div>
+                <div id="fifteen">
+                    <img src="chip/15-chip.png" alt="Chip 15">
+                </div>
+                <div id="fifty">
+                    <img src="chip/50-chip.png" alt="Chip 50">
+                </div>
+
+            </div>
+                 <div class="chipcontainer">
+                     <p>Chips</p>
+                     <p id="totalchips">$500</p>
+                 </div>
+        </div>
+                  <div id="msgbubble">
+                  <div id="msg">
+             
+					  </div></div>
+        <div id="table">
+         
+          <div id="dlr"><label id="dlabel">Dealer: </label>
+          <div id="dhand" class="hand">
+</div>
+          </div>
+          <div id="plr">
+
+          <label id="plabel">Player: </label>
+          <div id="phand" class="hand">
+
+          </div>
+</div>
+
+
+          <div class="buttons">
+            <button id="dealbtn" class="disabled">Deal</button>
+            <button id="hitbtn" class="disabled">Hit</button>
+            <button id="standbtn" class="disabled">Stand</button>
+          </div>
+            <br>
+            <a id="rules" href="rules.html" class="button">Game Rules</a>
+        </div>
+    
+
+    </body>
+
+</html>

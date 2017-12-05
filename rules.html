@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Game Rules</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="blackjackLogic.js"></script>
+    <script src="script.js"></script>
+
+
+<script>
+$(document).ready(function() { 
+  $("#clickOne").click(function() {
+    $("#bulletOne").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("#clickTwo").click(function() {
+    $("#bulletTwo").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("#clickThree").click(function() {
+    $("#bulletThree").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("#clickFour").click(function() {
+    $("#bulletFour").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("#clickFive").click(function() {
+    $("#bulletFive").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("#clickSix").click(function() {
+    $("#bulletSix").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("#clickSeven").click(function() {
+    $("#bulletSeven").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("#clickEight").click(function() {
+    $("#bulletEight").slideToggle();
+  });
+}); // End DOM Ready
+      
+    </script>
+
+</head>
+
+<body>
+<div id="rulesWrapper">
+<div id="gameRules">
+<h2 id="rulesHeader">Blackjack Rules</h2>
+    <h3 id="objectives">Objective</h3>
+    <p id="objectivesText">Beat the dealer by not busting (going over 21) and either outscoring the dealer or having the dealer bust.</p>
+    <h3>Rules</h3>
+    <ol>
+        <li>Game is played with one deck of 52 cards.</li>
+        <li>Aces = 1 or 11 points (up to the player), 2 to 9 according to their values, and 10s and face cards = 10 points.</li>
+        <li>Value of a hand is the sum of the point values of the cards. Blackjack is the highest hand (an ace and any 10 point card, it outranks all other 21 point hands).</li>
+        <li>Based on the required table minimum amount, the player makes a bet (required amount or higher).</li>
+        <li class= "rulesStyle" id="clickOne">After the player bets and hits deal, the dealer will give 2 cards to the player and 2 cards to himself.</li>
+        <ul id="bulletOne" style="display:none;"><li>One of the dealer’s cards is dealt face up.</li>
+            <li>The other card is hidden or facedown (called the “hole card”).</li>
+        </ul>
+        <li class= "rulesStyle" id="clickTwo">The play begins with the player. There are two choices available to the player:</li>
+        <ul id="bulletTwo" style="display:none;"><li>Stand: the player is not dealt additional cards.</li>
+            <li>Hit: the player draws another card (and more if they want to).</li>
+        If this card causes the player’s total points to go over 21 (“busting”) then they lose.</ul>
+        <li class= "rulesStyle" id="clickThree">If the player busts (goes over 21), the hole card remains hidden.</li>
+        <ul id="bulletThree" style="display:none;"><li>In all other cases, the hole card is flipped over.</li></ul>
+   <li class= "rulesStyle" id="clickFour"> If the player busts, the dealer wins, and they lose all the chips they bet.</li>
+        <ul id="bulletFour" style="display:none;"   ><li>If the player runs out of chips, they will be asked if they want to play again.</li>
+            <li> If they agree to a new game, the board will be cleared and chips will be resettled to $500.</li></ul>
+   <li> If the dealer busts, the player gets the chips they bet.</li>
+   <li class= "rulesStyle" id="clickFive"> If the player has blackjack, the player wins, and gets the chips they bet.</li>
+        <ul id="bulletFive" style="display:none;"><li>The hole card is then flipped, and the game ends.</li></ul>
+        <li class= "rulesStyle" id="clickSix">If the dealer has blackjack, the dealer wins, and the player loses the chips they bet.</li>
+        <ul id="bulletSix" style="display:none;"><li>The hole card is then flipped, and the game ends.</li></ul>
+        <li class= "rulesStyle" id="clickSeven">If the dealer does not have blackjack, the dealer takes another card.</li>
+        <ul id="bulletSeven" style="display:none;"><li>If the dealer has less than 16, they take another card.</li>
+            <li>If the dealer has more than 16, then it is checked to see if the dealer has more than 21.</li>
+            <li>If the dealer has more than 21, the dealer busts, and the player wins. Then the hole card is flipped, and the game ends.</li>
+   <li> If the dealer has less than 21, then it is checked to see if the dealer has more points than the player.</li>
+    <li>If the dealer has more points than the player, the dealer wins, the hole card is flipped, and the game ends.</li>
+    <li>If not, then it is checked to see if the dealer and player have tied/ have equal points.</li>
+   <li> If they have equal points, it results in a push where the player gets their original bet back, the hole card is flipped, and the game ends.</li>
+       <li> If they do not have equal points, the dealer wins, the hole card is flipped, and the game ends.</li></ul>
+   <li class= "rulesStyle" id="clickEight"> If the player AND the dealer both have blackjack, it results in a push where the player gets their original bet back.</li>
+        <ul id="bulletEight" style="display:none;"><li>The hole card is then flipped, and the game ends.</li></ul>
+    </ol>
+
+</div>
+<div id="goBack">
+    <a id="backButton" href="index.html" class="button">Back to game</a>
+</div>
+</div>
+</body>
+</html>

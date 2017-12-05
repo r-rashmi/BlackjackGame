@@ -1,0 +1,217 @@
+/*rashmi, annie, christine, olivia*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* header style */
+#poker {
+    height: 150px;
+}
+
+h1 {
+    letter-spacing: 0.3em;
+}
+
+/* message bubble stlye */
+
+#msgbubble{
+    color: #666666;
+    font-weight: 400;
+    float:right;
+    margin: 20px 80px 0px 0px;
+    background-image: url(img/bubble.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    display:none;
+}
+
+#msg{
+    margin: 15px 10px 10px 25px;
+	width: 160px;
+	font-size: 14px;
+}
+/* table style */
+#table {
+    margin: auto;
+    height: 585px;
+    width: 700px;
+    background-color: #2e726a;
+    margin-top: 20px;
+
+}
+#header{
+	display:block;
+	height: 30px;
+}
+#dhand, #phand {
+    width: 600px;
+    height: 150px;
+    background-color: white;
+    margin: auto;
+}
+#dlabel, #plabel {
+    display: block;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+    width: 600px;
+    padding: 20px 0px 20px 20px;
+}
+
+
+/* button style */
+.buttons button {
+    color: #484e56;
+    width: 147px;
+    background-color: #EFEFEF;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 22px;
+    vertical-align: top;
+    height: 50px;
+}
+.buttons button:hover {
+    opacity: 0.7;
+    transition: 1s;
+    cursor: pointer;
+}
+.buttons button:focus {
+    outline: none;
+    border: none;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* card style */
+.hand img {
+    text-align: left;
+    padding-top: 5px;
+    height: 90%;
+    margin-left: 10px;
+}
+.hand :first-child {
+    margin: 0;
+}
+
+
+/* bet style */
+.betting {
+    margin: 20px auto;
+    height: 585px;
+    width: 100px;
+    background-color: #d9dbdd;
+    float: left;
+    margin-left: 250px;
+}
+.betting div {
+    display: inline-block;
+}
+.betting img {
+    height: 80px;
+    margin-top: 8px;
+    margin-right: 18px;
+}
+.betting img:hover {
+    cursor: pointer;
+}
+.betcontainer {
+    float: left;
+}
+.chipcontainer {
+    float: right;
+}
+.betcontainer, .chipcontainer {
+    font-weight: 800;
+    font-size: 23px;
+    margin-top: -8px;
+    width: 100px;
+    letter-spacing: 0.1em;
+    color: #484e56;
+    text-transform: uppercase;
+}
+#totalchips, #pbet {
+    margin-top: -24px;
+    margin-left: -5px;
+}
+
+/*chips style*/
+
+#five:hover {
+    opacity: 0.7;
+}
+
+#ten:hover {
+    opacity: 0.7;
+}
+
+#fifteen:hover {
+    opacity: 0.7;
+}
+
+#fifty:hover {
+    opacity: 0.7;
+}
+
+.chips {
+    margin-left: 10px;
+}
+
+/*rules page link style*/
+
+#rules {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#rules:hover {
+    opacity: 0.7;
+}
+
+/*rules HTML page style*/
+
+#gameRules {
+    text-align: left;
+}
+
+#rulesHeader {
+    text-align: center;
+}
+
+.rulesStyle:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+
+#rulesWrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#backButton {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#goBack {
+    padding: 10px 10px 10px 10px;
+
+}
+
+#backButton:hover {
+    color: lightgray;
+}
